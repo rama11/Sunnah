@@ -5,12 +5,14 @@
  */
 package Sunnah;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Rama
  */
 public class Player {
-    private String name,pass;
+    private String name,pass, playerClass;
     
     public void setFrist(String inName,String inPass)
     {
@@ -22,6 +24,16 @@ public class Player {
     {
         System.out.println("Nama player " + name);
         System.out.println("Passwordnya " + pass);
+    }
+    
+    public String getName()
+    {
+        return this.name;
+    }
+    
+    public String getPass()
+    {
+        return this.pass;
     }
     
 }
