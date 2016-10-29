@@ -5,6 +5,8 @@
  */
 package Sunnah;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Rama
@@ -12,6 +14,14 @@ package Sunnah;
 public class Main {
     public static void main (String [] args)
     {
-        System.out.println("Berhasil");
+        String nama, pass;
+        
+        Scanner masuk = new Scanner(System.in);
+        System.out.print("Masukkan nama ");
+        nama = masuk.next();
+        System.out.print("Masukkan pass ");
+        pass = masuk.next();
+        System.out.println("Nama anda " + nama + "\n Dan password anda " + pass );
+        
     }
 }
