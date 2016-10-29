@@ -14,14 +14,21 @@ import java.util.Scanner;
 public class Main {
     public static void main (String [] args)
     {
+        // Deklarasi String untuk parameter membuat object player
         String nama, pass;
         
-        Scanner masuk = new Scanner(System.in);
+        Scanner inputParameter = new Scanner(System.in);
         System.out.print("Masukkan nama ");
-        nama = masuk.next();
+        nama = inputParameter.nextLine();
         System.out.print("Masukkan pass ");
-        pass = masuk.next();
-        System.out.println("Nama anda " + nama + "\n Dan password anda " + pass );
+        pass = inputParameter.nextLine();
+        
+        // Membuat object baru bernama 
+        Player user = new Player();
+        user.setFrist(nama, pass);
+        
+        // Menampilkan object yang baru di buat
+        user.showPlayer();
         
     }
 }
